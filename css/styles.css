@@ -1,0 +1,346 @@
+/* ===== Reset simple ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.left-header-content { /*Mettre le logo GitHub juste à côté du titre*/
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icone-reseau img {
+  display: flex;
+  background-color: black; /*mettre la couleur de l'icone en noir*/
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%; /*rendre l'icone ronde*/
+}
+
+.image-accueil{
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+}
+
+.image-accueil img{
+  border-radius: 20%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #0078ff;
+}
+
+/* ===== Hero ===== */
+.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #253752;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content h2 {
+  font-size: 2.2rem;
+}
+
+.hero-content p {
+  margin: 1rem 0 2rem;
+}
+
+.accent {
+  color: #ffea00;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  background: #b12fc3;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #802fc3;
+}
+
+/* ===== Projets ===== */
+
+
+
+
+
+
+
+/* Container principal centré */
+.row {
+  display: flex;
+  justify-content: center; /* centre les cartes horizontalement */
+  gap: 5rem;              /* espace entre les cartes */
+  flex-wrap: wrap;        /* pour que ça reste responsive */
+  padding: 20px;
+}
+
+
+/* 3 cartes de même taille */
+.column {
+  width: 650px; /* largeur fixe et identique pour les 3 cartes */
+}
+
+
+/* Cartes */
+.content {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  height: 100%; /* Super important pour uniformiser */
+}
+
+.content:hover {
+  transform: translateY(-5px);
+}
+
+/* Wrapper qui impose une hauteur identique pour les images */
+.image-wrapper {
+  overflow: hidden;
+}
+
+/* Image adaptable */
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Remplir sans déformer */
+}
+
+/* Image adaptable pour l'élément en hauteur */
+.image-wrapper-special img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; /* Remplir sans déformer */
+}
+
+
+
+
+
+
+
+
+
+/* Page projet-bdd */
+
+.hero-projet-bdd {
+  height: 80vh;
+  /* display: flex; */
+  align-items: center;
+  justify-content:start;
+  background: #253752;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container-projet-bdd-1{
+  display: flex;
+  justify-content: center;
+}
+
+.image-container-projet-bdd{
+  display: flex;
+  gap: 5rem;
+  padding: 2rem;
+  width: 50%;
+}
+
+.image-container-projet-bdd img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* Page projet-maquette-site-web */
+
+
+.hero-projet-maquette-site-web {
+  height: 80vh;
+  /* display: flex; */
+  align-items: center;
+  justify-content:start;
+  background: #253752;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container-projet-maquette-site-web-1{
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.image-container-projet-maquette-site-web{
+  display: flex;
+  gap: 5rem;
+  padding: 2rem;
+  width: 50%;
+}
+
+.image-container-projet-bdd img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.projets {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.projets h2 {
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  display: grid;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  justify-items: center;
+  align-items: start;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Hauteur fixe pour toutes les images */
+.card-img {
+  width: 100%;
+  height: auto; /* ← tu peux ajuster cette valeur */
+  object-fit: cover;
+}
+
+/* L'image remplit le conteneur */
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.card p {
+  padding: 0 1rem 1rem;
+}
+
+/* ===== À propos ===== */
+.a-propos {
+  background: #fff;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  text-align: center;
+  gap: 20px;
+  padding: 4rem 2rem;
+}
+
+/* ===== Contact ===== */
+.contact {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  text-align: center;
+  gap: 20px;
+  padding: 4rem 2rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+}
